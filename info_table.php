@@ -98,101 +98,10 @@ $sql = "SELECT id, firstname, lastname, age, email FROM info";
 $result = $conn->query($sql);
 ?>
 
-<style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
-    .table-container {
-        width: 90%;
-        margin: 2% auto;
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 16px;
-        color: #333;
-    }
-    th, td {
-        padding: 12px;
-        border: 1px solid #e0e0e0;
-        text-align: center;
-    }
-    th {
-        background-color: #4caf50;
-        color: #fff;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    tr:hover {
-        background-color: #f1f8f2;
-    }
-    .actions button {
-        background-color: #007bff;
-        border: none;
-        color: #fff;
-        padding: 8px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-    }
-    .actions button:hover {
-        background-color: #0056b3;
-        transform: scale(1.05);
-    }
-    .actions button.delete {
-        background-color: #dc3545;
-    }
-    .actions button.delete:hover {
-        background-color: #c82333;
-    }
-    .actions button.edit {
-        background-color: #28a745;
-    }
-    .actions button.edit:hover {
-        background-color: #218838;
-    }
-    .form-actions {
-        margin: 20px 0;
-        text-align: center;
-    }
-    .form-actions button {
-        background-color: #201772;
-        border: none;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s, transform 0.2s;
-    }
-    .form-actions button:hover {
-        background-color: #b380dd;
-        transform: scale(1.05);
-    }
-    .form-actions button.delete-selected {
-        background-color: #dc3545;
-    }
-    .form-actions button.delete-selected:hover {
-        background-color: #c82333;
-    }
-    .form-actions button.update-selected {
-        background-color: #28a745;
-    }
-    .form-actions button.update-selected:hover {
-        background-color: #218838;
-    }
-</style>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 
 <div class="table-container">
     <form id="dataForm" method="post" action="">
